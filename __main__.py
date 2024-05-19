@@ -162,6 +162,9 @@ def main():
     for x in range(2):
         mouse.click(Button.left, 1)
         time.sleep(1)
+    mouse.position = gatherStopPos
+    mouse.click(Button.left, 1)
+    time.sleep(2)
         
     #First-time Bug Gathering: 4 times, total 10
     mouse.position = gatherBugPos
@@ -430,7 +433,7 @@ def main():
     ##    result in a page error. If you like it with 10 players on a page, you
     ## might want to adjust this such that 'X' goes to 25 and 'Y' goes to 75 instead.
     for x in range(5):
-        for y in range(350):
+        for y in range(600):
             mouse.click(Button.left, 1)
             time.sleep(0.1)
         time.sleep(4)
